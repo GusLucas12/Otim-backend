@@ -5,10 +5,7 @@ from app.optimizer import simplex_solver, solve_graphic
 app = FastAPI()
 
 
-origins = [
-    "http://localhost:4200",
-]
-
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
